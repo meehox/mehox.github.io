@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #c5d6a3;
+            background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+        }
+
+        #bar li {
+            display: inline;
+            color: snow;
+            font-size: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        #bar {
+            position: sticky;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            top: 5px;
+            z-index: 12;
+        }
+        #bar li:hover{
+            display: inline;
+            color: snow;
+            font-size: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: rgb(35, 36, 31);
+            border-radius: 10%;
+        }
+
+        .x {
+            overflow: auto;
+            font-size: 25px;
+        }
+
+        h1 {
+            background-color: black;
+            color: blanchedalmond;
+            width: 1709px;
+            font-family: ;
+            padding: 50px;
+        }
+
+        img.barok {
+            float: left;
+            width: 400px;
+            height: 400px;
+            margin-right: 15px;
+            box-shadow:2px 2px black;
+        }
+
+        .headpaints {
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+        }
+
+        img.Romantiscism {
+            float: left;
+            width: 400px;
+            height: 400px;
+            margin-right: 15px;
+            box-shadow:2px 2px black;
+        }
+
+        .romantiscism {
+            overflow: auto;
+
+        }
+
+        img.impressionism {
+            float: left;
+            width: 400px;
+            height: 400px;
+            box-shadow:2px 2px black;
+        }
+
+        .impressionism {
+            overflow: auto;
+            clear: left;
+        }
+
+        img.Expressionism {
+            float: left;
+            width: 200px;
+            height: 400px;
+            box-shadow:2px 2px black;
+        }
+
+        .Expressionism {
+            overflow: auto;
+            clear: both;
+        }
+
+        img.surreal {
+            float: left;
+            width: 400px;
+            height: 400px;
+            box-shadow:2px 2px black;
+        }
+
+        .surreal {
+            overflow: auto;
+            clear: both;
+        }
+
+        img.pop {
+            float: left;
+            width: 400px;
+            height: 400px;
+            box-shadow:2px 2px black;
+        }
+
+        .pop {
+            overflow: auto;
+            clear: both;
+        }
+
+        .list {
+            text-align: center;
+            font-size: 25px;
+            background-color: black;
+            color: snow;
+        }
+
+        .list li {
+            display: inline;
+            padding: 20px;
+            font-size: 25px;
+            padding-left: 50px;
+            color: snow;
+        }
+
+        .head {
+            display: inline-block;
+            padding: 0px;
+            z-index: 2;
+        }
+
+        #header {
+            background-image: url(https://iasbh.tmgrup.com.tr/17a8f2/0/0/0/0/0/0?u=http://i.sabah.com.tr/sb/galeri/kultursanat/son-aksam-yemegi-tablosunun-sirri/2.jpg&mw=752&mh=700);
+            background-size: 1800px 700px;
+            height: 700px;
+        }
+
+        .art {
+            text-align: left;
+            font-size: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        #art{
+            text-shadow: blueviolet;
+        }
+
+        .egg-container {
+            position: relative;
+            text-align: center;
+            
+        }
+
+        .egg-title-container,
+        .egg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            
+        }
+
+        .egg-container:hover .egg-image {
+            border-radius: 0%;
+            width: 500px;
+            height: 500px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            transition: 0.7s ease;
+        }
+
+        .egg-container:hover .egg-title-container {
+            transition: 0.7s ease;
+            border-radius: 0;
+        }
+
+        .egg-container:hover .egg-title {
+            transition: 1s ease;
+            color: white;
+        }
+
+        .egg-container:hover .c {
+            border-radius: 0%;
+            width: 500px;
+            height: 500px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            transition: 0.7s ease;
+
+        }
+
+        /* https://stackoverflow.com/questions/14123999/center-a-div-horizontally-and-vertically */
+        .egg-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 0;
+            margin: 0;
+            color: black;
+        }
+
+        .egg-title-container {
+            background-color: black;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        a:link {
+            color: snow;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: snow;
+            text-decoration: none;
+        }
+
+        .span {
+            color: rgb(192, 32, 32);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="art" id="art">ART MOVEMENTS.</h1>
+    </div>
+    <ul id="bar">
+        <li class="bar"><a href="#header">Home</a></li>
+        <li class="bar"><a href="#arts">About</a></li>
+        <li class="bar"><a href="#movements">Movements</a></li>
+        <li class="bar"><a href="#representatives">Representatives</a></li>
+    </ul>
+    <p class="art" id="arts"><br><br>An art movement is a tendency or style in art with a specific common philosophy or
+        goal, followed by a group of artists during a restricted period of time, (usually a few months, years or
+        decades) or, at least, with the heyday of the movement defined within a number of years. Art movements were
+        especially important in modern art, when each consecutive movement was considered as a new avant-garde.</p>
+    <h5 class="art">The Art Movements Directory is a concise reference guide to the major art movements and periods,
+        helping you to learn more about the development and history of art.</h5>
+    <table>
+        <thead>
+            <tr>
+                <th class="egg-container">
+                    <div class="egg-title-container">
+                        <h3 class="egg-title">Baroque</h3>
+                    </div><a href="#brq"><img
+                            src="https://www.wannart.com/wp-content/uploads/2019/07/Aziz-Ignatiusun-Y%C3%BCkselmesi.jpg"
+                            alt="barok" class="headpaints egg-image">
+                </th></a>
+                <th class="egg-container">
+                    <div class="egg-title-container">
+                        <h3 class="egg-title">Romanticism</h3>
+                    </div><a href="#romn"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Joseph_Wright_of_Derby._A_Blacksmith%27s_Shop.1771.jpg"
+                        alt="Romanticism" class="headpaints egg-image">
+                </th></a>
+                <th class="egg-container">
+                    <div class="egg-title-container">
+                        <h3 class="egg-title">Impressionism</h3>
+                    </div><a href="#impr"><img
+                        src="https://cdn.shopify.com/s/files/1/1414/2472/articles/5_Famous_Impressionist_Artists_and_Their_Masterpieces_768x480.png?v=1561469589"
+                        alt="impressionism" class="headpaints c">
+                </th></a>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="egg-container">
+                    <div class="egg-title-container">
+                        <h3 class="egg-title">Expressionism</h3>
+                    </div><a href="#expr"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Edvard_Munch_-_Anxiety_-_Google_Art_Project.jpg"
+                        alt="" class="headpaints c">
+                </td></a>
+                <td class="egg-container">
+                    <div class="egg-title-container">
+                        <h3 class="egg-title">Surrealism</h3>
+                    </div><a href="#surrreal"><img
+                        src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2012/01/the-persistance-of-memory.jpg"
+                        alt="" class="headpaints c">
+                </td></a>
+                <td class="egg-container">
+                    <div class="egg-title-container">
+                        <h3 class="egg-title">Pop Art</h3>
+                    </div><a href="#popp"><img
+                        src="https://www.moma.org/learn/moma_learning/_assets/www.moma.org/wp/moma_learning/wp-content/uploads/2012/07/Warhol.-Self-Portrait-393x395.jpg"
+                        alt="" class="headpaints c">
+                </td></a>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <div>
+        <h3 class="list" id="representatives"><br><br>Representatives of Art Movements</h3>
+        <ul class="list">
+            <li><span class="span">B</span>aroque
+            <li><span class="span">R</span>omantiscism
+            <li><span class="span">I</span>mpressionism
+            <li><span class="span">E</span>xpressionism
+            <li><span class="span">S</span>urrealism
+            <li><span class="span">P</span>op Art
+        </ul>
+    </div>
+    <div class="barok x" id="movements"><br>
+        <h3 class="barok" id="brq"><br><br>Baroque</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Michael_Sweerts_-_A_man_delousing_himself_and_a_sleeping_boy.jpg"
+            alt=".." class="barok">
+        <p class="barok">The principal European style in the visual arts in the 17th century and the first half of the
+            18th; generally considered to be characteristic of the period of Caravaggio, Rubens, Rembrandt, Giordano and
+            Tiepolo in painting, Bernini in sculpture, and Borromini, Fischer von Erlach and Wren in architecture. Usage
+            of the term is often extended to the whole period 1600–1750 without qualifying restrictions, or improperly
+            to mean a florid and elaborate style in art, architecture, music or literature, of any date from late
+            antiquity to the early 20th century.</p>
+    </div>
+    <div class="Romantiscism x">
+        <h3 class="Romantiscism" id="romn"><br><br>Romantiscism</h3>
+        <img src="https://www.sartle.com/media/artwork/three-lovers-theodore-gericault.jpg?colorbox_zoom&itok=JwE7eJ9s"
+            alt="Romanticism" class="Romantiscism">
+        <p class="Romantiscism">At the end of the 18th century and well into the 19th, Romanticism quickly spread
+            throughout Europe and the United States to challenge the rational ideal held so tightly during the
+            Enlightenment. The artists emphasized that sense and emotions - not simply reason and order - were equally
+            important means of understanding and experiencing the world. Romanticism celebrated the individual
+            imagination and intuition in the enduring search for individual rights and liberty. Its ideals of the
+            creative, subjective powers of the artist fueled avant-garde movements well into the 20th century.
+            Romanticist practitioners found their voices across all genres, including literature, music, art, and
+            architecture. Reacting against the sober style of Neoclassicism preferred by most countries' academies, the
+            far reaching international movement valued originality, inspiration, and imagination, thus promoting a
+            variety of styles within the movement. Additionally, in an effort to stem the tide of increasing
+            industrialization, many of the Romanticists emphasized the individual's connection to nature and an
+            idealized past.</p>
+    </div>
+    <div class="impressionism x">
+        <h3 class="impressionism" id="impr"><br><br>Impressionism</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Henri_Fantin-Latour_-_The_Temptation_of_St._Anthony_-_Google_Art_Project.jpg"
+            alt="" class="impressionism">
+        <p class="impressionism">Term generally applied to a movement in art in France in the late 19th century. The
+            movement gave rise to such ancillaries as American Impressionism. The primary use of the term Impressionist
+            is for a group of French painters who worked between around 1860 and 1900, especially to describe their
+            works of the later 1860s to mid-1880s. These artists include Frédéric Bazille, Paul Cézanne, Edgar Degas,
+            Edouard Manet, Claude Monet, Berthe Morisot, Camille Pissarro, Auguste Renoir and Alfred Sisley, as well as
+            Mary Cassatt, Gustave Caillebotte (who was also an important early collector), Eva Gonzalès, Armand
+            Guillaumin and Stanislas Lépine. The movement was anti-academic in its formal aspects and involved the
+            establishment of venues other than the official Salon for showing and selling paintings.</p>
+    </div>
+    <div class="Expressionism x">
+        <h3 class="Expressionism" id="expr"><br><br>Expressionism</h3>
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/10-portrait-of-jeanne-hebuterne-amedeo-modigliani.jpg"
+            alt="" class="Expressionism">
+        <p class="Expressionism">International movement in art and architecture, which flourished between c. 1905 and c.
+            1920, especially in Germany. It also extended to literature, music, dance and theatre. The term was
+            originally applied more widely to various avant-garde movements: for example it was adopted as an
+            alternative to the use of ‘Post-Impressionism’ by Roger Fry in exhibitions in London in 1910 and 1912. It
+            was also used contemporaneously in Scandinavia and Germany, being gradually confined to the specific groups
+            of artists and architects to which it is now applied. Expressionism in the fine arts developed from the
+            Symbolist and expressive trends in European art at the end of the 19th century. The period of ‘classical
+            Expressionism’ began in 1905, with the foundation of the group Die Brucke, and ended c. 1920. Although in
+            part an artistic reaction both to academic art and to Impressionism, the movement should be understood as a
+            form of ‘new Humanism’, which sought to communicate man’s spiritual life. It reflected the deep intellectual
+            unrest c. 1900, reflected in contemporary literary sources, about the destruction of the traditional
+            relationship of trust between man and the world.</p>
+        <h3 class="surreal x" id="surrreal"><br><br>Surrealism</h3>
+        <img src="https://lh3.ggpht.com/klFbm_DHN0K5yrl3tX2lV8Wvjo0VbffLpepCdLAND7r2XtjPBd5y9IuCeObn=s1200" alt=""
+            class="surreal">
+        <p class="surreal">International intellectual movement, which was centred mainly in Paris and occupied with the
+            problems of thought and expression in all their forms. The Surrealists perceived a deep crisis in Western
+            culture and responded with a revision of values at every level, inspired by the psychoanalytical discoveries
+            of Freud and the political ideology of Marxism. In both poetry and the visual arts this revision was
+            undertaken through the development of unconventional techniques, of which Automatism was paramount. The
+            Parisian poets who formulated Surrealist theory and orientation were officially identified by André Breton’s
+            Manifeste du surréalisme (1924), the essay ‘Une Vague de rêves’ (October 1924) by Louis Aragon and the
+            periodical La Révolution surréaliste, published two months later. Under Breton’s guidance, the movement
+            remained potent up to World War II, surviving until his death in 1966.</p>
+    </div>
+    <div class="pop x">
+        <h3 class="pop" id="popp"><br><br>Pop art</h3>
+        <img src="https://images.masterworksfineart.com/product/einstein-2019/Mr.-Brainwash-Silkscreen-and-Mixed-Media-Einstein-2019-for-sale.jpg"
+            alt="" class="pop">
+        <p class="pop">International movement in painting, sculpture and printmaking. The term originated in the
+            mid-1950s at the ICA, London, in the discussions held by the Independent Group concerning the artefacts of
+            popular culture. This small group included the artists Richard Hamilton and Eduardo Paolozzi as well as
+            architects and critics. Lawrence Alloway (1926–1990), the critic who first used the term in print in 1958,
+            conceived of Pop art as the lower end of a popular-art to fine-art continuum, encompassing such forms as
+            advertising, science-fiction illustration and automobile styling. Hamilton defined Pop in 1957 as: ‘Popular
+            (designed for a mass audience); Transient (short term solution); Expendable (easily forgotten); Low Cost;
+            Mass Produced; Young (aimed at Youth); Witty; Sexy; Gimmicky; Glamorous; and Big Business’. Hamilton set
+            out, in paintings such as $he (1958–61; London, Tate), to explore the hidden connotations of imagery taken
+            directly from advertising and popular culture, making reference in the same work to pin-ups and domestic
+            appliances as a means of commenting on the covert eroticism of much advertising presentation.</pclass="pop">
+    </div>
+</body>
+
+</html>
